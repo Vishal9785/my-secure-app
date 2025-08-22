@@ -25,7 +25,7 @@ jobs:
         run: npm audit --production --audit-level=high
 
   build:
-    needs: security-check   # Ye sirf tab chalega jab security-check pass ho jaye
+    needs: security-check   # this run when  security-check pass successfully
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
